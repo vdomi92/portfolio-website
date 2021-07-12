@@ -11,6 +11,24 @@ body {
   padding: 0;
 }
 
+.navbar-content {
+  width: 100%;
+}
+.navbar-nav {
+  width: 100%;
+}
+
+.gitHubIcon {
+  width: 10%;
+}
+
+@media screen and (max-width: 576px) {
+  .navBreakingPoint {
+    margin: auto;
+    background-color: black;
+  }
+}
+
 .profilePicture {
   border-radius: 50%;
   width: 231px;
