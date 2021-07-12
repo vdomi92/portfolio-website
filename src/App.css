@@ -1,0 +1,131 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(15, 22, 36);
+  color: rgba(223, 202, 202, 0.87);
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  width: 231px;
+  height: 250px;
+}
+
+.firstSection {
+  height: 100vh;
+  box-sizing: border-box;
+  color: rgb(255, 246, 246);
+}
+
+.firstSectionTitle {
+  font-family: 'Zen Loop';
+  font-size: 86px;
+  font-weight: 900;
+}
+
+.firstSectionParagraph {
+  font-family: 'Zen Loop';
+  font-size: 48px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.introduction {
+  color: whitesmoke;
+}
+
+.introParagraph {
+  width: 80%;
+  margin: auto;
+  font-family: 'Zen Loop';
+  font-size: 28px;
+  text-align: justify;
+}
+.introGreeting {
+  font-family: 'Zen Loop';
+  font-size: 48px;
+  font-weight: 600;
+}
+.introCard {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgb(2, 107, 55);
+  border-radius: 70px;
+}
+.wavingHand {
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  transform-origin: 95% 95%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.projects {
+  width: 100%;
+  margin: 0;
+}
+.projectsTitle {
+  font-family: 'Zen Loop';
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.projectCard {
+  width: 350px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: -7px 6px 6px 5px #000000;
+  box-shadow: -7px 6px 6px 5px #afac7ce7;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+.projectPreviewImage {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.projectLinkSpan {
+  position: relative;
+  bottom: 330px;
+}
+
+.projectParagraph {
+  margin-bottom: 0;
+}
