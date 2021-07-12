@@ -11,14 +11,14 @@ Styling was made with Bootstrap and CSS.
 
 #### Website components
 
--FirstSection.js
--Very small introduction to showcase what the site is about.
--Introduction.js
--A more detailed introduction card about my personal knowledge.
--Projects.js
--Small project cards containing links to my personal projects i've made recently.
+- FirstSection.js
+  - Very small introduction to showcase what the site is about.
+- Introduction.js
+  - A more detailed introduction card about my personal knowledge.
+- Projects.js
+  - Small project cards containing links to my personal projects i've made recently.
 
 ##### Future components to be added
 
--Header for website navigation.
--Contact Me form.
+- Header for website navigation.
+- Contact Me form.
