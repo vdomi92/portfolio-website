@@ -24,8 +24,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .navBreakingPoint {
-    margin: auto;
-    background-color: black;
+    margin: auto !important;
   }
 }
 
