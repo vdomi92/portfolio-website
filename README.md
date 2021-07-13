@@ -1,4 +1,4 @@
-# Vatai Domonkos web developer's portfolio
+# Vatai Domonkos web developer portfolio
 
 ## Overview
 
