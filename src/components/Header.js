@@ -9,17 +9,17 @@ const Header = () => {
         <div className='navbar-content '>
           <ul className='navbar-nav d-flex justify-content-center'>
             <li className='nav-item mx-2 align-self-center'>
-              <a id='aboutMe' className='nav-link'>
+              <a href='#aboutMe' className='nav-link'>
                 About me
               </a>
             </li>
             <li className='nav-item mx-2 align-self-center'>
-              <a id='projects' className='nav-link'>
+              <a href='#projects' className='nav-link'>
                 Projects
               </a>
             </li>
             <li className='nav-item mx-2 align-self-center me-auto navBreakingPoint'>
-              <a id='contactMe' className='nav-link'>
+              <a href='#contactMe' className='nav-link'>
                 Contact me
               </a>
             </li>
