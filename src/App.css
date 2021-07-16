@@ -10,6 +10,44 @@ body {
   margin: 0;
   padding: 0;
 }
+.navbar {
+  color: rgb(15, 22, 36) !important;
+}
+.navbar a {
+  color: rgb(15, 22, 36) !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(1, 79, 85);
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+  opacity: 0.8;
+}
+
+.navbar-content {
+  width: 100%;
+}
+.navbar-nav {
+  width: 100%;
+}
+
+.gitHubIcon {
+  width: 10%;
+}
+
+@media screen and (max-width: 576px) {
+  .navBreakingPoint {
+    margin: auto !important;
+  }
+}
 
 .profilePicture {
   border-radius: 50%;
