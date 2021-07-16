@@ -10,13 +10,19 @@ const Header = () => {
         <div className='navbar-content '>
           <ul className='navbar-nav d-flex justify-content-center'>
             <li className='nav-item mx-2 align-self-center'>
-              <a className='nav-link'>About me</a>
+              <a href='https://github.com/vdomi92' className='nav-link'>
+                About me
+              </a>
             </li>
             <li className='nav-item mx-2 align-self-center'>
-              <a className='nav-link'>Projects</a>
+              <a href='https://github.com/vdomi92' className='nav-link'>
+                Projects
+              </a>
             </li>
             <li className='nav-item mx-2 align-self-center me-auto navBreakingPoint'>
-              <a className='nav-link'>Contact me</a>
+              <a href='https://github.com/vdomi92' className='nav-link'>
+                Contact me
+              </a>
             </li>
             <li className='nav-item align-self-center '>
               <a href='https://github.com/vdomi92' target='_blank'>
