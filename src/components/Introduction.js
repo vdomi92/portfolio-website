@@ -2,13 +2,13 @@ import React from 'react'
 
 const Introduction = () => {
   return (
-    <div className='text-center introduction pb-5'>
-      <div className='introCard'>
-        <h2 className='pt-5 introGreeting'>
+    <div className='text-center introduction pb-5' id='aboutMe'>
+      <div className='introCard text-center'>
+        <h2 className='introGreeting'>
           Hi I'm Domonkos. Nice to meet you.
           <span className='wavingHand'>👋</span>
         </h2>
-        <p className='introParagraph pb-5'>
+        <p className='introParagraph'>
           I'm looking for a position where I can work on interesting projects
           with the latest technologies so I can grow as a person and developer.
           Some of the technologies I have experience with is HTML, CSS,
@@ -19,6 +19,7 @@ const Introduction = () => {
           i chose to pursue it on my own too.
         </p>
       </div>
+      <hr className='separatingLineTwo' />
     </div>
   )
 }

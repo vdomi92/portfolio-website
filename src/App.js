@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <Header></Header>
+
       <FirstSection></FirstSection>
       <Introduction></Introduction>
       <Projects></Projects>

@@ -9,11 +9,8 @@ const FirstSection = () => {
       <p className='mt-3 firstSectionParagraph'>
         With passion and flair for design to create websites and apps.
       </p>
-      <img
-        src={profilePicture}
-        alt='profile picture'
-        className='profilePicture mt-3'
-      />
+      <img src={profilePicture} alt='profile' className='profilePicture mt-3' />
+      <hr className='separatingLineOne' />
     </div>
   )
 }
