@@ -224,7 +224,7 @@ body {
 @media screen and (max-width: 576px) {
   .formContainer {
     width: 100%;
-    min-width: 330px;
+    min-width: 320px;
     color: rgb(15, 22, 36);
     background-color: rgb(255, 255, 255);
     margin-bottom: 40px;
