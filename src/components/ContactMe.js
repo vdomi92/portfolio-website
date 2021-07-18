@@ -1,26 +1,34 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
+import { useState } from 'react'
 
 const ContactMe = () => {
+  const [contactName, setContactName] = useState('')
+  const [contactEmail, setContactEmail] = useState('')
+  const [contactMessage, setContactMessage] = useState('')
+
   const handleSubmit = (e) => {
     e.preventDefault()
-
-    emailjs
-      .sendForm(
-        'service_sx8unc7',
-        'template_ktv7liq',
-        e.target,
-        'user_B9huvrUz1B3zdRjhzZsxz'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
-    e.target.reset()
+    if (contactName !== '' && contactEmail !== '' && contactMessage !== '') {
+      emailjs
+        .sendForm(
+          'service_sx8unc7',
+          'template_ktv7liq',
+          e.target,
+          'user_B9huvrUz1B3zdRjhzZsxz'
+        )
+        .then(
+          (result) => {
+            console.log(result.text)
+          },
+          (error) => {
+            console.log(error.text)
+          }
+        )
+      e.target.reset()
+    } else {
+      window.alert('Please fill out every input')
+    }
   }
 
   return (
@@ -34,6 +42,7 @@ const ContactMe = () => {
             id='contactName'
             className='form-control'
             name='name'
+            onChange={(e) => setContactName(e.target.value)}
           />
           <label htmlFor='contactName'>Enter your name</label>
         </div>
@@ -44,6 +53,7 @@ const ContactMe = () => {
             id='contactEmail'
             className='form-control'
             name='email'
+            onChange={(e) => setContactEmail(e.target.value)}
           />
           <label htmlFor='contactName'>Enter your email address</label>
         </div>
@@ -52,6 +62,7 @@ const ContactMe = () => {
             className='form-control contactMessageBody'
             id='contactMessage'
             name='message'
+            onChange={(e) => setContactMessage(e.target.value)}
           ></textarea>
           <label htmlFor='contactMessage'>Leave a message here</label>
         </div>
