@@ -246,6 +246,7 @@ body {
   }
   .contactCard {
     width: 320px !important;
+    top: 30px !important;
   }
   .contactPhoto {
     width: 72px !important;
