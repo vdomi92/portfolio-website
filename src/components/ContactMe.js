@@ -36,21 +36,37 @@ const ContactMe = () => {
     <div className='contactContainer'>
       <div className='contactCard'>
         <div className='contactPhotoContainer'>
-          <img src={profilePic} className='contactPhoto' />
+          <img
+            src={profilePic}
+            className='contactPhoto'
+            alt='contact card profile'
+          />
         </div>
         <div className='contactInfoContainer'>
           <ul className='contactInfo'>
             <li>
               <i class='fa fa-map-marker contactIcon1' aria-hidden='true'></i>
-              <span className='contactCardInfo'>Budapest, Hungary</span>
+              <a
+                href='https://www.google.com/maps/@47.4813602,18.9902203,11z'
+                className='contactCardInfo'
+              >
+                Budapest, Hungary
+              </a>
             </li>
             <li>
               <i class='fa fa-envelope contactIcon2'></i>
-              <span className='contactCardInfo'>vataidomonkos@gmail.com</span>
+              <a
+                href='mailto: vataidomonkos@gmail.com'
+                className='contactCardInfo'
+              >
+                vataidomonkos@gmail.com
+              </a>
             </li>
             <li>
               <i class='fa fa-phone contactIcon3' aria-hidden='true'></i>
-              <span className='contactCardInfo'>+36204765915</span>
+              <a href='tel:+36204765915' className='contactCardInfo'>
+                +36204765915
+              </a>
             </li>
           </ul>
         </div>

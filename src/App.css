@@ -276,6 +276,10 @@ body {
   margin-bottom: 0px !important;
   list-style: none;
 }
+.contactInfo a {
+  text-decoration: none;
+  color: rgb(228, 226, 226);
+}
 .contactIcon1 {
   margin-left: 3.42px;
   margin-right: 3.42px;
