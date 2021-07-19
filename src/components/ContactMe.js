@@ -1,6 +1,7 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
 import { useState } from 'react'
+import profilePic from '../images/profilepic.jpg'
 
 const ContactMe = () => {
   const [contactName, setContactName] = useState('')
@@ -32,44 +33,67 @@ const ContactMe = () => {
   }
 
   return (
-    <div className='text-center mx-auto mt-3 formContainer' id='contactMe'>
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <h3 className='contactTitle mb-3'>Contact me</h3>
-        <div className='form-floating formInputDiv'>
-          <input
-            type='text'
-            placeholder='John Smith'
-            id='contactName'
-            className='form-control'
-            name='name'
-            onChange={(e) => setContactName(e.target.value)}
-          />
-          <label htmlFor='contactName'>Enter your name</label>
+    <div className='contactContainer'>
+      <div className='contactCard'>
+        <div className='contactPhotoContainer'>
+          <img src={profilePic} className='contactPhoto' />
         </div>
-        <div className='form-floating mt-3 formInputDiv'>
-          <input
-            type='email'
-            placeholder='example@mail.com'
-            id='contactEmail'
-            className='form-control'
-            name='email'
-            onChange={(e) => setContactEmail(e.target.value)}
-          />
-          <label htmlFor='contactName'>Enter your email address</label>
+        <div className='contactInfoContainer'>
+          <ul className='contactInfo'>
+            <li>
+              <i class='fa fa-map-marker contactIcon1' aria-hidden='true'></i>
+              <span className='contactCardInfo'>Budapest, Hungary</span>
+            </li>
+            <li>
+              <i class='fa fa-envelope contactIcon2'></i>
+              <span className='contactCardInfo'>vataidomonkos@gmail.com</span>
+            </li>
+            <li>
+              <i class='fa fa-phone contactIcon3' aria-hidden='true'></i>
+              <span className='contactCardInfo'>+36204765915</span>
+            </li>
+          </ul>
         </div>
-        <div className='form-floating mt-3 formInputDiv'>
-          <textarea
-            className='form-control contactMessageBody'
-            id='contactMessage'
-            name='message'
-            onChange={(e) => setContactMessage(e.target.value)}
-          ></textarea>
-          <label htmlFor='contactMessage'>Leave a message here</label>
-        </div>
-        <button className='btn w-50 btn-primary mt-3 formBtn' type='submit'>
-          Send message
-        </button>
-      </form>
+      </div>
+      <div className='text-center mx-auto mt-3 formContainer' id='contactMe'>
+        <form onSubmit={(e) => handleSubmit(e)}>
+          <h3 className='contactTitle mb-3'>Contact me</h3>
+          <div className='form-floating formInputDiv'>
+            <input
+              type='text'
+              placeholder='John Smith'
+              id='contactName'
+              className='form-control'
+              name='name'
+              onChange={(e) => setContactName(e.target.value)}
+            />
+            <label htmlFor='contactName'>Enter your name</label>
+          </div>
+          <div className='form-floating mt-3 formInputDiv'>
+            <input
+              type='email'
+              placeholder='example@mail.com'
+              id='contactEmail'
+              className='form-control'
+              name='email'
+              onChange={(e) => setContactEmail(e.target.value)}
+            />
+            <label htmlFor='contactName'>Enter your email address</label>
+          </div>
+          <div className='form-floating mt-3 formInputDiv'>
+            <textarea
+              className='form-control contactMessageBody'
+              id='contactMessage'
+              name='message'
+              onChange={(e) => setContactMessage(e.target.value)}
+            ></textarea>
+            <label htmlFor='contactMessage'>Leave a message here</label>
+          </div>
+          <button className='btn w-50 btn-primary mt-3 formBtn' type='submit'>
+            Send message
+          </button>
+        </form>
+      </div>
     </div>
   )
 }
