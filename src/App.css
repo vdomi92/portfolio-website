@@ -244,6 +244,20 @@ body {
   .formBtn {
     margin-top: 0 !important;
   }
+  .contactCard {
+    width: 320px !important;
+  }
+  .contactPhoto {
+    width: 72px !important;
+    height: 80px !important;
+    border-radius: 40px !important;
+  }
+  .contactInfo {
+    padding-left: 0;
+  }
+  .contactCardInfo {
+    margin-left: 5px !important;
+  }
 }
 .contactMessageBody {
   height: 200px !important;
