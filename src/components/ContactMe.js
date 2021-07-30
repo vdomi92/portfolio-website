@@ -13,10 +13,10 @@ const ContactMe = () => {
     if (contactName !== '' && contactEmail !== '' && contactMessage !== '') {
       emailjs
         .sendForm(
-          'service_sx8unc7',
-          'template_ktv7liq',
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
           e.target,
-          'user_B9huvrUz1B3zdRjhzZsxz'
+          process.env.REACT_APP_USER_ID
         )
         .then(
           (result) => {
