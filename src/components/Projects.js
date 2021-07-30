@@ -1,5 +1,6 @@
 import React from 'react'
 import testImg from '../images/testimg.jpg'
+import landingPageImg from '../images/landingPageImg2.jpg'
 
 const Projects = () => {
   return (
@@ -45,7 +46,7 @@ const Projects = () => {
             <img
               className='projectPreviewImage'
               alt='preview of project'
-              src={testImg}
+              src={landingPageImg}
             ></img>
           </a>
           <span className='projectLinkSpan'>Company landing page</span>
@@ -54,7 +55,7 @@ const Projects = () => {
       <p className='projectParagraph mt-5'>
         If you are interested in seeing more, visit my
         <a
-          href='https://github.com/vdomi92'
+          href='https://github.com/vdomi92/landing-page'
           target='_blank'
           rel='noreferrer'
           className='projectGitLink'
