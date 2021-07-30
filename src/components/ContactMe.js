@@ -21,9 +21,13 @@ const ContactMe = () => {
         .then(
           (result) => {
             console.log(result.text)
+            window.alert(
+              "Thank you for contacting me. I'll get back to you as soon as possible."
+            )
           },
           (error) => {
             console.log(error.text)
+            window.alert('Oops something went wrong.')
           }
         )
       e.target.reset()
