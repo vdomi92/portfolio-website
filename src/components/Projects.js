@@ -1,46 +1,31 @@
 import React from 'react'
-import testImg from '../images/testimg.jpg'
+import quizMe from '../images/quizMe.JPG'
 import landingPageImg from '../images/landingPageImg2.jpg'
 
 const Projects = () => {
   return (
     <div className='text-center projects pt-5 container-fluid' id='projects'>
       <h3 className='projectsTitle'>Examples of my projects</h3>
-      <div className='row justify-content-around'>
-        <div className='projectCard mt-5 col-lg-3'>
+      <div className='row justify-content-center'>
+        <div className='projectCard mt-5 col-lg-6'>
           <a
             target='_blank'
-            href='https://github.com/vdomi92?tab=repositories'
+            href='https://vdomi-portfolio-quiz-me.netlify.app/'
             rel='noreferrer'
           >
             <img
               className='projectPreviewImage'
               alt='preview of project'
-              src={testImg}
-            ></img>
-          </a>
-          <span className='projectLinkSpan'>Hangman</span>
-        </div>
-
-        <div className='projectCard mt-5 col-lg-3'>
-          <a
-            target='_blank'
-            href='https://github.com/vdomi92?tab=repositories'
-            rel='noreferrer'
-          >
-            <img
-              className='projectPreviewImage'
-              alt='preview of project'
-              src={testImg}
+              src={quizMe}
             ></img>
           </a>
           <span className='projectLinkSpan'>Quiz</span>
         </div>
 
-        <div className='projectCard mt-5 col-lg-3'>
+        <div className='projectCard mt-5 col-lg-6'>
           <a
             target='_blank'
-            href='https://github.com/vdomi92?tab=repositories'
+            href='https://vdomi-portfolio-company-page.netlify.app/'
             rel='noreferrer'
           >
             <img
