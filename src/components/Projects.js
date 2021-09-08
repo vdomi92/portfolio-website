@@ -40,7 +40,7 @@ const Projects = () => {
       <p className='projectParagraph mt-5'>
         If you are interested in seeing more, visit my
         <a
-          href='https://github.com/vdomi92/landing-page'
+          href='https://github.com/vdomi92/'
           target='_blank'
           rel='noreferrer'
           className='projectGitLink'
